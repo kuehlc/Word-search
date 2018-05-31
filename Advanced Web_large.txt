@@ -1,0 +1,18 @@
+jsp,JavaServer Page that creates dynamic web pages.
+servlet,A Java program that extends the capabilities of a server.
+html,Markup language used to create web pages.
+http,Stateless protocol.
+bootstrap,Developing with HTML, CSS, and JS.
+javabean,Encapsulates many objects into a single object.
+password,Use this so only you can log in.
+database,A way to store data to be easily accessed and managed.
+form,Use this to gather user data to be sent.
+tomcat,Powers web applications but has an unflattering logo.
+stateless,A state is not saved.
+cookies,Stores data on your computer(not edible).
+email,Messages sent over the Internet.
+browser,A way to surf the web.
+dopost,Does not append parameters to URL.
+css,A central part of styling a web page.
+index,A typical landing page name.
+session,A semipermanent interactive information interchange.

@@ -1,0 +1,106 @@
+Monday 9/18
+
+9:30am - 9:45am ->  discussed word search app, with hint implementation(?). Possibly want to do it as a web app. Discussing wordsearch generation ideas, and an interactive UI that would allow a player to solve the puzzle within the web browser. The interactive UI may exist in the final product.
+
+9:45am - 10:16am -> discussed front end interface. Tried to create wordsearch generation algorithm. Possible aesthetic ideas - let the user pick their own font (in final version). 
+
+10:25am -10:50am -> discussed difficult tasks, brought Colom up to speed (arrived at 10:30). 
+Difficult tasks: 
+searching for any word intersection in the array, 
+Placement of intersecting words (horizontal, vertical, diagonal, forwards + backwards) 
+
+11:05am-11:30am -> discussed details. Predefined 3 puzzle sizes: small (10x10), medium (20x20), and large (30x30). May skip intersecting words, but will keep diagonals and fwd/backwards.
+Defined word characters counts per array size: minimum size of 3 characters, max character count of 5, 7, 10 for small, medium, and large. Number of words defined by (array size / 2 - 1).
+
+Homework (each of us have our own version of a UML class diagram/set of requirements, and next meeting we will discuss the best attributes of each version): due at 12:30 Tues 9/19
+Rudimentary class diagrams 
++ object requirements
+Breakdown of responsibilities
+
+Tuesday, 9/19:
+
+10:15am - 10:30am -> Welcomed Joe to the group. Discussed project details, Saaniya discussed her idea for the class diagram for the project. 
+10:31am - 10:55am -> discussed when the objective of the next meeting, Discussed individual class format and possible algorithms for word placement functionality. Came up with classes to use for the project.
+
+Homework: Come up with possible method signatures for each class, and create outline for the project where the classes are created and the SVN is set up.
+	Due - 9/21 at 11am.
+
+12:45pm - 1:11pm -> Came up with idea for drop-down box for user interactivity: drop-down contains themes for word generation in word search, discussed solving the word search: solvability should be a function, but need to figure out click functionality. Words displayed on side for user to find.
+
+10:20pm - 11:20pm -> confirmed prototype will be made using swing, expanded uml diagram, created project in eclipse.
+
+	Hw: Set responsibilities, Due 9/21/17, 10pm
+
+Friday 9/22/17
+9:50pm-10:10pm -> Saaniya did some preliminary work on the GUI, noted down expected inputs. Need to review some Swing (not expected to take long). Will test with hard coated inputs first, replace with proper object variables later. 
+
+HW -> review Swing for radio buttons, drop down menus. Finish by 10:00 pm today! (did not finish )
+
+Friday 9/22/2017
+10:00pm-11:00pm -> Corey made the Tile class, Word class, and Board class. This is mostly an outline that will need to be adjusted based on how the GUI will be done.
+
+Saturday 9/23/2017
+12:35pm-1:05pm -> Corey made changes to the board class to have 3 create methods for each size board. Also, created a test package where the board class can be tested.
+
+4:50pm-7:00pm -> Saaniya: created methods for user input for puzzle size and puzzle theme (with hard coated values). Brushed up on Swing. Created grid for word search puzzle. 
+
+10pm-11:40pm -> Saaniya: the buttons fill the whole grid. GUI is essentially ‘done’. Everything is visually tested with hard coated values. No action listener logic yet. 
+
+Monday, 9/25/17
+
+9:30am-11:00am -> All met, some commits made 
+Saaniya: increased font size of letters in GUI. Need to wrap wordsList panel properly for display. 
+Discussed sequence of events for Action Listeners/Back end logic (wow need work) 
+// word list on the right, descriptions on the bottom -> need to update grid. Add scroll bar to textboxes
+
+11:30am - 12pm -> Corey and Colom discussed validation and word placement strategies for the board creation. Potentially using a “chunking” method for word placement for the prototype where words are randomly placed in separate chunks on the board separate from other words to avoid possibility of collision.
+
+10:40pm - 11:30pm -> Corey put more time into getWordsFromFile() method in the Board class. Also, spent time adjusting the design of the Board class as a whole.
+
+Tuesday, 9/26/17
+
+9:40am-:10:40am -> Saaniya: drafted action listener logic for gui
+
+12:00am - 2:30am -> Colom: Worked on an improvement to random word placement that removed the chunk system by allowing words to be placed without using predefined array regions.
+
+12:00pm - 1:20pm -> Corey worked on improving the code quality in the Board class. Rearranged logic in the word creation methods to better fit the needs of methods created my group members.
+
+3:00pm - 3:45pm -> Colom: Performed further work on random placement system, creating methods that would allow for diagonal checks.
+
+4:30pm-6:30pm -> Saaniya: ‘refactored’ some action listener logic based on a suggestion that Colom made
+
+11:30pm - 11:45pm -> Corey completed fillBoardGaps() method which fills the empty spaces of the board with random characters.
+
+12:20am-12:30am -> Saaniya: added second word panel underneath puzzle. Having some issues with word wrapping still :0. Will need to test with shorter chunks of text or scrollable bar
+
+7:00pm-9:00pm -> Joe: created text files and created basic controller for playing the game. Worked on figuring out how to pass the board to the gui properly.
+
+Wednesday 9/27
+
+9:30am - 11:00am -> Saaniya: gui still needs to integrate with board (for random array generation :0) , but action listener functionality tested (letters selectable!). Working on scrollable text in gui.
+
+9:30am - 10:00am -> Corey: Fixed a couple of bugs in Board class that caused null pointer exceptions. Made changes to words arrayList and board in the Board class to be more accessible to other classes.
+
+10:00am - 1:00pm - > Corey and Colom: Finished most of the back end functionality and cleaned up/compressed the code in the Board class and Validator. Added functionality to allow for words to be placed backwards.
+
+9:00pm - 9:15pm - > Corey cleaned up, condensed, and reorganized code in multiple classes, as well as completed JavaDocs for his created methods.
+
+9:20pm - 9:30pm -> Corey created a new test case for the BoardTest class.
+
+9:40pm - 11:30pm -> Corey manually tested running the game to find bugs to fix. Assisted in bug fixing and going over the checklist of what was left to complete with the team.
+
+4:30-6:30 -> added coloring to button click when word is selected. Correct selection = green buttons. 
+
+5:45pm-6:30pm-> Joe: collaborated with saaniya and Colin to solve and find bugs within code and begin to add code to controller. 
+
+7:30pm-8:45pm-> Joe: polished up controller and calling method. Typed up more words and descriptions for word search. And worked on bug fixing. 
+
+11:00 - 11:59pm -> Colom worked on word files by finding relevant words to match themes of software engineering and advanced web.
+
+11:00pm-12:00am -> Joe: assisted in looking for and fixing bugs. 
+
+Thursday, 9/28
+
+1:00am-1:30am -> Joe: attempted to create restart button.  Unable to produce a working option.
+
+8:30am - 9:25am -> Group: Implemented restart game button, cleaned up code, final documentation. Restart button does not ask for new theme/size, uses same theme/size as before but creates new puzzle/word bank. Collective screaming.

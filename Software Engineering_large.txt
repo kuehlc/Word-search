@@ -1,0 +1,18 @@
+waterfall,Development process that focuses on planning and documentation.
+agile,Development process that focuses on working with change.
+scrum,Delivering new software capability every 2-4 weeks.
+spiral,phases of development circling in.
+prototype,An initial software realization to demonstrate concepts.
+sprint,A cycle that develops an increment of the system.
+user,A type of requirement regarding what the system is expected to do.
+system,A detailed type of requirement for system design.
+functional,A type of requirement for how the system should behave.
+testing,Often performed first in this development method.
+pair,Developers often work with another person in this method.
+scenario,Real-life example of requirements.
+validity,A check for additional or different functions being necessary.
+realism,A check that requirements can actually be implemented.
+wicked,A problem that cannot be completely defined.
+management,Essential for the evolution of requirements.
+requirements,A description of what the system should do.
+feasibility,A short study that focuses on the requirements engineering phase.
